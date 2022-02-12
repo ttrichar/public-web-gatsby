@@ -1,6 +1,6 @@
 {
-  "name": "my-gatsby-site",
-  "version": "1.0.0",
+  "name": "@fathym-it/public-web-gatsby",
+  "version": "0.0.0",
   "private": true,
   "description": "My Gatsby Site",
   "author": "mcgear",
@@ -11,6 +11,8 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
+    "deploy": "npm version patch && npm run deploy:app",
+    "deploy:app": "npm version patch --prefix static && npm run build && npm publish ./public --access public",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
