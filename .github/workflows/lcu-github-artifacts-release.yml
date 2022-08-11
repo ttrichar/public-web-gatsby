@@ -1,4 +1,4 @@
-name: ttrichar/public-web-gatsby
+name: ttrichar/gatsby-starter-blog
 
 on:
   push:
@@ -13,7 +13,7 @@ env:
   Branches: main
   MainBranch: main
   NPMRegistry: https://registry.npmjs.org/
-  InstallCommand: npm ci
+  InstallCommand: npm i
   BuildCommand: npm run build
   Output: ./public
 
